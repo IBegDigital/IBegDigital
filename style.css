@@ -1,0 +1,136 @@
+.dropdown-menu {
+    min-width: 80px !important;
+}
+
+html {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+
+.progress {
+    background-color: lightgrey;
+    border-radius: 20px;
+    height: 40px;
+    width: 100%;
+}
+
+.progress-done {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: repeating-linear-gradient(to left,
+            #1cf28c,
+            #2c9999,
+            #3e7454);
+    box-shadow: 0 5px 5px -6ox #2c8558, 3px 7px #3e7454;
+    border-radius: 20px;
+    color: white;
+    height: 100%;
+    width: 72%;
+    transition: 1s ease 0.3s;
+}
+
+#first-stop {
+    width: 120px;
+    position: relative;
+    top: 140px;
+    left: 12%;
+}
+
+#second-stop {
+    width: 120px;
+    position: relative;
+    top: 160px;
+    left: 43%;
+}
+
+#third-stop {
+    width: 140px;
+    position: relative;
+    top: 80px;
+    left: 70%;
+}
+
+#fourth-stop {
+    width: 120px;
+    position: relative;
+    top: 100px;
+    left: 92%;
+}
+
+#wrapper {
+    position: relative;
+    top: -200px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .progress {
+        background-color: lightgrey;
+        border-radius: 20px;
+        height: 650px;
+        width: 40px;
+        position: relative;
+        left: 45%;
+        top: 0;
+    }
+
+    .progress-done {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: repeating-linear-gradient(to top,
+                #1cf28c,
+                #2c9999,
+                #3e7454);
+        box-shadow: 0 5px 5px -6ox #2c8558, 3px 7px #3e7454;
+        border-radius: 20px;
+        color: white;
+        height: 72%;
+        width: 40px;
+        transition: 1s ease 0.3s;
+    }
+
+    #first-stop {
+        position: relative;
+        top: 240px;
+        left: 70%;
+    }
+
+    #second-stop {
+        position: relative;
+        top: 310px;
+        left: 0%;
+    }
+
+    #third-stop {
+        position: relative;
+        top: 510px;
+        left: 65%;
+    }
+
+    #fourth-stop {
+        position: relative;
+        top: 590px;
+        left: 40px;
+    }
+
+    #wrapper {
+        position: relative;
+        top: -240px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

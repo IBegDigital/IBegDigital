@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBegDigital</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"
+        integrity="sha512-6UofPqm0QupIL0kzS/UIzekR73/luZdC6i/kXDbWnLOJoqwklBK6519iUnShaYceJ0y4FaiPtX/hRnV/X/xlUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../shared/img/logo.ico" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark text-white">
+        <div class="container align-center">
+            <h3 class="navbar-brand text-center mx-auto fs-3">IBegDigital</h3>
+            <!-- <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    English
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="../en/index.php">English</a></li>
+                    <li><a class="dropdown-item" href="../es/index.php">Español</a></li>
+                    <li><a class="dropdown-item" href="../fr/index.php">Français</a></li>
+                    <li><a class="dropdown-item" href="../de/index.php">Deutsch</a></li>
+                    <li><a class="dropdown-item" href="../pt/index.php">Português</a></li>
+                    <li><a class="dropdown-item" href="../it/index.php">Italiano</a></li>
+                    <li><a class="dropdown-item" href="../ru/index.php">Русский</a></li>
+                    <li><a class="dropdown-item" href="../jp/index.php">日本語</a></li>
+                    <li><a class="dropdown-item" href="../cn/index.php">中文</a></li>
+                    <li><a class="dropdown-item" href="../tr/index.php">Türkçe</a></li>
+                </ul>
+            </div> -->
+        </div>
+    </nav>
+
+    <!-- <?PHP
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $db = "testing";
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $db);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    if (isset($_REQUEST['amount'])) {
+
+        $amount = $_REQUEST['amount'];
+        $query = "insert into test (name,amount) value('name', $amount)";
+        if (mysqli_query($conn, $query)) {
+        }
+        mysqli_close($conn);
+    }
+    ?> -->
+
+    <!-- Content -->
+    <!-- Donation -->
+    <section class="bg-light text-dark p-4 text-center text-sm-start mt-4">
+        <div class="container my-5 my-sm-5">
+            <div class="d-sm-flex row align-items-center justify-content-between">
+                <div class="col-md-6">
+                    <h1 class="lead display-4 mb-5">Toss a Coin to a Digital Begger</h1>
+                    <p class="lead my-5 my-sm-4 fs-4">Your help goes long way. If you have a coin to spare, and you
+                        would like to help me
+                        get through
+                        university, donate a coin today </p>
+                    <p class="lead my-5 my-sm-4 fs-5">The reason why I need and do this is explained in the <a
+                            href="#about">About Me</a> section</p>
+                </div>
+                <div class="my-4 my-sm-0 col-md-6 text-center">
+                    <div id="donate-button-container">
+                        <div id="donate-button-container">
+                            <div id="donate-button"></div>
+                            <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js"
+                                charset="UTF-8"></script>
+                            <script>
+                                PayPal.Donation.Button({
+                                    env: 'production',
+                                    hosted_button_id: '3RRXXYB64MPSC',
+                                    image: {
+                                        src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+                                        alt: 'Donate with PayPal button',
+                                        title: 'PayPal - The safer, easier way to pay online!',
+                                    }
+                                }).render('#donate-button');
+                            </script>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- <form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="hosted_button_id" value="GCQDGANXDMNCE" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"
+                        name="submit" title="PayPal - The safer, easier way to pay online!"
+                        alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_SI/i/scr/pixel.gif" width="1" height="1" />
+                </form> -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- <?php $latestDono1 = "dynamicaly read text goes here from DB";
+    $latestDono2 = "dynamicaly read text goes here from DB";
+    $latestDono3 = "dynamicaly read text goes here from DB";
+    $bigDono1 = "dynamically generated text from DB";
+    $bigDono2 = "dynamically generated text from DB";
+    $bigDono3 = "dynamically generated text from DB";
+    $countiry1 = "dynamically generated text  from DB";
+    $countiry2 = "dynamically generated text from DB";
+    $countiry3 = "dynamically generated text from DB";
+    $progress = 72 ?> -->
+
+
+    <!-- Top donations -->
+    <section class="bg-success text-light p-1 p-md-5 text-center text-lg-start ">
+        <div class="container my-5 my-sm-5">
+            <h1 class="text-center my-5 lead display-4">Top Donations</h1>
+            <hr>
+            <div class="d-sm-flex row py-5">
+                <div class="col-lg-4 py-3 text-center">
+                    <h3 class="lead display-6"> Latest Donations</h3>
+                    <p class="lead my-5 my-sm-4">
+                        <!-- <?php echo $latestDono1 ?> -->
+                        dynamically generated text from DB
+                    </p>
+                    <p class="lead my-5 my-sm-4">
+                        <!-- <?php echo $latestDono2 ?> -->
+                        dynamically generated text from DB
+                    </p>
+                    <p class="lead my-5 my-sm-4">
+                        <!-- <?php echo $latestDono3 ?> -->
+                        dynamically generated text from DB
+                    </p>
+                </div>
+                <div class="col-lg-4 py-3 text-center">
+                    <h3 class="lead display-6">Bigest donations</h3>
+                    <p class="lead my-5 my-sm-4">
+                        <!-- <?php echo $bigDono1 ?> -->
+                        dynamically generated text from DB
+
+                    </p>
+                    <p class="lead my-5 my-sm-4">
+                        <!-- <?php echo $bigDono2 ?> -->
+                        dynamically generated text from DB
+
+                    </p>
+                    <p class="lead my-5 my-sm-4">
+                        <!-- <?php echo $bigDono3 ?> -->
+                        dynamically generated text from DB
+                    </p>
+                </div>
+                <div class="col-lg-4 py-3 text-center">
+                    <h3 class="lead display-6">Top countries</h3>
+                    <p class="lead my-5 my-sm-4">1.
+                        <!-- <?php echo $countiry1 ?> -->
+                        dynamically generated text from DB
+                    </p>
+                    <p class="lead my-5 my-sm-4">2.
+                        <!-- <?php echo $countiry1 ?> -->
+                        dynamically generated text from DB
+                    </p>
+                    <p class="lead my-5 my-sm-4">3.
+                        <!-- <?php echo $countiry1 ?> -->
+                        dynamically generated text from DB
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Goals -->
+    <section class="bg-light text-dark px-4 py-4 p-sm-5 text-start text-sm-start mt-4">
+        <div class="container my-5 my-sm-5">
+            <h1 class="my-5 lead display-3">Goal</h1>
+            <div class="d-sm-flex row align-items-center justify-content-between lead">
+                <div class="mt-5" id="wrapper">
+                    <div id="first-stop" class="lead">2851.2$ <br>for food</div>
+                    <div id="third-stop" class="lead">17622$ <br>magic number</div>
+                    <div id="second-stop" class="lead">11520$ <br>far better life</div>
+                    <div id="fourth-stop" class="lead">24000$ </div>
+                    <div class="progress">
+                        <div class="progress-done" id="progressdone">testValue</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About me -->
+    <!-- Top donations -->
+    <section class="bg-success text-light p-2 p-md-5  text-center text-sm-start " id="about">
+        <div class="container mt-5 my-sm-5">
+            <h1 class="text-center my-5 lead display-3">About Me</h1>
+            <hr>
+            <div class="d-sm-flex row py-5">
+                <div class="col-lg-6 py-3">
+                    <h3 class="lead display-5">Why i made this</h3>
+                    <p class="lead">Text Explaining my position and why i made this</p>
+                    <hr>
+                </div>
+
+                <div class="col-lg-6 py-3">
+                    <h3 class="lead display-5">Goals</h3>
+                    <p class="lead my-5 my-sm-4 px-3 p-lg-0">I divided goals a into few part, which can be seen in
+                        the
+                        section above. My goal is mostly to be able to live a healthier life than the one I am
+                        living now. All the amounts in the graph above are calculated based on my needs for the time I
+                        have left to finish Bachelor Degree</p>
+                    <hr>
+                    <h3 class="lead display-5 mt-5">What I do with money</h3>
+                    <p class="lead mt-5 my-sm-4 px-3 p-lg-0">
+                        Up to 5000€ - I get to add bonus meal on the plate and a better quality food
+                    <p class="lead mt-5 my-sm-4 px-3 p-lg-0">
+                        up to 10000€ - I get to afford Gym, some social occasions, some necessary things I need like:
+                        better glasses, better pillow, better laptop etc, new phone, etc..</p>
+                    <p class="lead mt-5 my-sm-4 px-3 p-lg-0">
+                        up to 17622€ - Amount I calculated will allow me to enjoy student life like my peers
+                        for a bit </p>
+                    <p class="lead mt-5 my-sm-4 px-3 p-lg-0">
+                        24000€ - Round number that somehow feels good when I think about it </p>
+                    <p class="lead mt-5 my-sm-4 px-3 p-lg-0">
+                        80000€ - will not have to think twice about pursuing masters degree</p>
+                    </p>
+                    <p class="lead mt-5 my-sm-4 px-3 p-lg-0">
+                        1000000€ or more - straight into Vanguard high dividend stock, will not have to worry aboud
+                        finance again</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- message -->
+    <section class="bg-light text-dark px-4 py-4 p-sm-5 text-start text-sm-start mt-4">
+        <div class="container my-5 my-sm-5 px-3 px-sm-5">
+            <h1 class="my-5 lead display-5">Leave a message</h1>
+            <p class="lead"> be kind, share a positive thought</p>
+            <form action="" method="post" id="message-form">
+                <textarea class="form-control" rows="3"></textarea>
+                <button class="btn btn-warning m-5 px-4 px-sm-4" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-4 bg-success text-white">
+        <hr>
+        <div class="container text-center mx-auto ">
+            IBegDigital all rights reserved
+            <a href="" class="px-4"><i class="fa-brands fa-twitter fa-xl"></i></a>
+        </div>
+    </footer>
+</body>
+<script src="../shared/js/functions.js"></script>
+
+</html>
